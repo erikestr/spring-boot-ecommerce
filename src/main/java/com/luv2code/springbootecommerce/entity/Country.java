@@ -2,6 +2,7 @@ package com.luv2code.springbootecommerce.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,6 +25,7 @@ public class Country {
 
     //TODO: Set up one-to-many with states
     @OneToMany(mappedBy = "country")
+    @JsonIgnore
     private List<State> states;
 
 }
