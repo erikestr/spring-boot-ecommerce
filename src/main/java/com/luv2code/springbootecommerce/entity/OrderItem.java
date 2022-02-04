@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "address")
+@Table(name = "order_item")
 @Getter
 @Setter
 public class OrderItem {
