@@ -5,5 +5,7 @@ import lombok.Data;
 @Data
 public class PurchaseResponse {
 
-    private String orderTrackingNumber;
+    /* Lombok generate constructors only for finals */
+    /* Another option is using @NonNull annotation on the field instead of final */
+    private final String orderTrackingNumber;
 }
