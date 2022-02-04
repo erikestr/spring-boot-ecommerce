@@ -1,4 +1,7 @@
 package com.luv2code.springbootecommerce.dao;
 
-public interface CustomerRepository {
+import com.luv2code.springbootecommerce.entity.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
 }
