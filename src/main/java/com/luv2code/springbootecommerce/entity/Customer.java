@@ -20,8 +20,8 @@ public class Customer {
     @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "lasta_name")
-    private String lastaName;
+    @Column(name = "last_name")
+    private String lastName;
 
     @Column(name = "email")
     private String email;
