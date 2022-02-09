@@ -19,7 +19,7 @@ import java.util.*;
 @Service
 public class CheckoutServiceImpl implements CheckoutService{
 
-    private final CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     /* @Autowired is optional since we only have one constructor */
     public CheckoutServiceImpl(CustomerRepository customerRepository,
